@@ -7,6 +7,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.nio.charset.StandardCharsets;
+import java.util.List;
+
 @RestController
 @RequestMapping("/A2Ls")
 public class A2LController {
@@ -21,6 +24,9 @@ public class A2LController {
 
    @GetMapping()
    public ResponseEntity<?> getTest(){
-       return new ResponseEntity<>("oioioi", HttpStatus.OK);
+       List<A2L> selected = a2lService.getByName("test binario python grande");
+       byte [] file = selected.get(0).getFile();
+       String content = new String(file, StandardCharsets.UTF_8);
+       return new ResponseEntity<>(content, HttpStatus.OK);
    }
 }
