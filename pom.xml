@@ -36,6 +36,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.lisha.iase</groupId>
+			<artifactId>a2lparser</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/a2lparser-2.6.1-jar-with-dependencies.jar</systemPath>
+		</dependency>
 	</dependencies>
 
 	<build>

@@ -14,6 +14,7 @@ public class A2LRowMapper implements RowMapper<A2L> {
 
         a2l.setName(rs.getString("name"));
         a2l.setFile(rs.getBytes("file"));
+        a2l.setParsed(rs.getString("parsed"));
         return a2l;
     }
 

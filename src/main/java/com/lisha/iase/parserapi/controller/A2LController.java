@@ -24,9 +24,8 @@ public class A2LController {
 
    @GetMapping()
    public ResponseEntity<?> getTest(){
-       List<A2L> selected = a2lService.getByName("test binario python grande");
-       byte [] file = selected.get(0).getFile();
-       String content = new String(file, StandardCharsets.UTF_8);
-       return new ResponseEntity<>(content, HttpStatus.OK);
+       List<A2L> selected = a2lService.getByName("savingParsed");
+       String file = selected.get(0).getParsed();
+       return new ResponseEntity<>(file, HttpStatus.OK);
    }
 }
