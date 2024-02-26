@@ -2,14 +2,14 @@ package com.lisha.iase.parserapi.model;
 
 public class A2L {
     private String name;
-    private byte[] file;
+    private String a2lPath;
 
-    private  String parsed;
+    private  String jsonPath;
 
     public String getName(){ return name; }
     public void setName(String name){ this.name = name; }
-    public byte[] getFile(){ return file; }
-    public void setFile(byte[] file){ this.file = file; }
-    public String getParsed(){ return parsed; }
-    public void setParsed(String parsed){ this.parsed = parsed; }
+    public String getA2lPath(){ return a2lPath; }
+    public void setA2lPath(String a2lPath){ this.a2lPath = a2lPath; }
+    public String getJsonPath(){ return jsonPath; }
+    public void setJsonPath(String jsonPath){ this.jsonPath = jsonPath; }
 }

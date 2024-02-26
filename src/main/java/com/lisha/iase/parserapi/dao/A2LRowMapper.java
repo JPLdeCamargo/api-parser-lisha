@@ -13,8 +13,8 @@ public class A2LRowMapper implements RowMapper<A2L> {
         A2L a2l = new A2L();
 
         a2l.setName(rs.getString("name"));
-        a2l.setFile(rs.getBytes("file"));
-        a2l.setParsed(rs.getString("parsed"));
+        a2l.setA2lPath(rs.getString("a2l_path"));
+        a2l.setJsonPath(rs.getString("json_path"));
         return a2l;
     }
 
