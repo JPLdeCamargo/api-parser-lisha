@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Saved a2l files ###
+content/a2ls/*
+content/jsons/*
